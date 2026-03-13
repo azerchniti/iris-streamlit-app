@@ -1,7 +1,14 @@
 import streamlit as st
 
 # -------- LOGIN -------- #
+import logging
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logging.info("Application Streamlit démarrée")
 def login():
 
     st.title("🔐 Authentification")
@@ -43,4 +50,5 @@ Utilisez le menu de gauche pour accéder aux pages :
 - Data
 - Training
 - Prediction
+
 """)

@@ -30,6 +30,11 @@ if not st.session_state["logged_in"]:
 
 st.set_page_config(page_title="App ML Multi-Pages", layout="wide")
 
+st.set_page_config(
+    page_title="App ML Multi-Pages",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 st.title("🚀 Application ML Multi-Pages")
 
 st.markdown("""
